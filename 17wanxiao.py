@@ -49,7 +49,7 @@ def get_post_json(jsons):
         # print(data)
         post_dict = {
             "areaStr": "{\"streetNumber\":\"\",\"street\":\"\",\"district\":\"太康县\",\"city\":\"周口市\",\"province\":\"河南省\",\"town\":\"\",\"pois\":\"大任庄\",\"lng\":115.06483800000022,\"lat\":34.050850056199906,\"address\":\"太康县大任庄\",\"text\":\"河南省-周口市\",\"code\":\"\"}",
-            "deptStr": {"deptid":252795,"text":"信息与电子工程学院-专升本软件工程-20专升本软件工程2班"},
+            "deptStr": "{\"deptid":252795,"text":"信息与电子工程学院-专升本软件工程-20专升本软件工程2班\"}",
             "deptid": 252795,
             "customerid": 1467,
             "userid": "10376007",

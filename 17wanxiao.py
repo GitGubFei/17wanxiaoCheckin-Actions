@@ -48,17 +48,16 @@ def get_post_json(jsons):
         data = json.loads(res['data'])
         # print(data)
         post_dict = {
-            "areaStr": data['areaStr'],
-            "deptStr": data['deptStr'],
-            "deptid": data['deptStr']['deptid'],
-            "customerid": data['customerid'],
-            "userid": data['userid'],
-            "username": data['username'],
-            "stuNo": data['stuNo'],
-            "phonenum": data['phonenum'],
+            "areaStr": "{\"streetNumber\":\"\",\"street\":\"\",\"district\":\"太康县\",\"city\":\"周口市\",\"province\":\"河南省\",\"town\":\"\",\"pois\":\"大任庄\",\"lng\":115.06483800000022,\"lat\":34.050850056199906,\"address\":\"太康县大任庄\",\"text\":\"河南省-周口市\",\"code\":\"\"}",
+            "deptStr": {"deptid":252795,"text":"信息与电子工程学院-专升本软件工程-20专升本软件工程2班"},
+            "deptid": 252795,
+            "customerid": 1467,
+            "userid": "10376007",
+            "username": "任傲飞",
+            "stuNo": "3320070226",
+            "phonenum": "",
             "templateid": data['templateid'],
-            "updatainfo": [{"propertyname": i["propertyname"], "value": i["value"]} for i in
-                           data['cusTemplateRelations']],
+            "updatainfo": [{"propertyname":"temperature","value":"36.5"},{"propertyname":"备注","value":""},{"propertyname":"symptom","value":"无症状"},{"propertyname":"isdefinde","value":"否.未隔离"},{"propertyname":"isGoWarningAdress","value":"否"},{"propertyname":"isTouch","value":"否"},{"propertyname":"xinqing","value":"健康"},{"propertyname":"ownPhone","value":"15036810832"},{"propertyname":"emergencyContact","value":"任壤"},{"propertyname":"mergencyPeoplePhone","value":"18272899269"},{"propertyname":"assistRemark","value":""}],
             "checkbox": [{"description": i["decription"], "value": i["value"]} for i in
                          data['cusTemplateRelations']],
         }
